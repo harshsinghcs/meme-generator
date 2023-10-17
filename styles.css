@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-image: url(pencil.jpg);
 }
 
 .meme-container {
@@ -23,6 +24,16 @@ body {
 #bottom-text {
     bottom: 10px;
     right: 10px;
+}
+
+#width-input{
+    width: 143px;
+    height: 32px;
+}
+
+#height-input{
+    width: 143px;
+    height: 32px;
 }
 
 #meme-image {
