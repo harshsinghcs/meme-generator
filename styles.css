@@ -1,11 +1,31 @@
 body {
     text-align: center;
-    background-image: url(pencil.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.left {
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .meme-container {
     position: relative;
-    display: inline-block;
 }
 
 .meme-text {
@@ -26,16 +46,6 @@ body {
     right: 10px;
 }
 
-#width-input{
-    width: 143px;
-    height: 32px;
-}
-
-#height-input{
-    width: 143px;
-    height: 32px;
-}
-
 #meme-image {
     max-width: 100%;
 }
@@ -46,12 +56,15 @@ body {
 
 input[type="file"] {
     display: block;
-    margin: 10px auto;
+    margin: 10px 0;
 }
 
-input[type="text"] {
-    padding: 10px;
-    margin: 5px;
+input[type="text"],
+input[type="number"],
+select,
+input[type="color"] {
+    display: block;
+    margin: 10px 0;
 }
 
 button {
