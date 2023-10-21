@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Meme Generator</title>
-</head>
-<body>
-   <h1> Welcome to mene generator</h1>
-<div class="container">
-        <div class="left">
-            <h1>Meme Generator</h1>
-            <form id="meme-form">
-                <input type="file" id="image-input" accept="image/*">
-                <input type="text" id="top-text-input" placeholder="Top Text">
-                <input type="text" id="bottom-text-input" placeholder="Bottom Text">
-                <label for="width-input">Width:</label>
-                <input type="number" id="width-input" value="400">
-                <label for="height-input">Height:</label>
-                <input type="number" id="height-input" value="300">
-                <label for="text-color-input">Text Color:</label>
-                <input type="color" id="text-color-input" value="#ffffff">
-                <label for="text-font-input">Text Font:</label>
-                <select id="text-font-input">
-                    <option value="Arial">Arial</option>
-                    <option value="Times New Roman">Times New Roman</option>
-                    <option value="Courier New">Courier New</option>
-                </select>
-                <button type="submit">Generate Meme</button>
-            </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Meme 😆 Generator</title>
+  </head>
+  <body>
+    <h1 class="title">Welcome to meme generator</h1>
+    <div class="container">
+      <div class="left">
+        <h1 class="title">Meme Generator</h1>
+        <p id="footer">
+          Crafting Memes, Igniting Laughter😁!
+        </p>
+        <form id="meme-form">
+          <input type="file" id="image-input" accept="image/*" />
+          <input type="text" id="top-text-input" placeholder="Top Text" />
+          <input type="text" id="bottom-text-input" placeholder="Bottom Text" />
+          <label for="width-input">Width:</label>
+          <input type="number" id="width-input" value="400" />
+          <label for="height-input">Height:</label>
+          <input type="number" id="height-input" value="300" />
+          <label for="text-color-input">Text Color:</label>
+          <input type="color" id="text-color-input" value="#ffffff" />
+          <label for="text-font-input">Text Font:</label>
+          <select id="text-font-input">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+          </select>
+          <button type="submit">Generate Meme</button>
+        </form>
+      </div>
+      <div class="right">
+        <div class="meme-container">
+          <div class="meme-text" id="top-text"></div>
+          <img src="default.jpg" alt="Meme Image" id="meme-image" />
+          <div class="meme-text" id="bottom-text"></div>
         </div>
-        <div class="right">
-            <div class="meme-container">
-                <div class="meme-text" id="top-text"></div>
-                <img src="default.jpg" alt="Meme Image" id="meme-image">
-                <div class="meme-text" id="bottom-text"></div>
-            </div>
-        </div>
+      </div>
     </div>
+    <hr>
+    <p id="footer">
+      Unleash Your Creativity, One <span style="color: green">Meme</span> at a
+      Time!
+    </p>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
